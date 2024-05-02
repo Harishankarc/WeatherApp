@@ -1,0 +1,160 @@
+*{
+
+    border: none;
+    padding: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: CityName;
+    src: url('./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+}
+.card {
+    width: 390px;
+    height: 560px;
+    background: #f3f3;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+  
+  .card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #f5f5;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+  }
+  
+  .card span {
+    
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  
+  .card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+  }
+  
+  .card .img {
+    width: 350px;
+    height: 280px;
+    background: #f5f5;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+
+  .input {
+    font-family: CityName;
+    position: relative;
+    left: 50%;
+    transform: translate(-70%);
+    background-color: white;
+    max-width: 190px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+  .input:focus {
+    color: black; 
+    background-color: white;
+    box-shadow: -3px -3px 15px rgba(255, 0, 255, 0.333);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+  .City,.temp{
+    font-family: CityName;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 40px;
+  }
+  .temp{
+    padding-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+.WeatherImage{
+    height: 140px;
+}
+.image{
+  position: absolute;
+  color: white;
+  left: 130px;
+  top:60px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 150px;
+}
+.items_container{
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-35%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.text1,.text-temp,.text-wind,.text-humidity,.text-pressure{
+    font-size: 15px;
+    font-family: CityName;
+    color: whitesmoke;
+    margin: 0;
+}
+.icon{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+    .card{
+      width: 350px;
+    }
+}
+
+.Searchbutton{
+  background-color: black;
+  margin-left: 84px;
+  position: absolute;
+  border-radius: 0px 10px 10px 0px;
+  height: 40px;
+  cursor: pointer;
+
+}
+
+.temp_desc{
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+}
